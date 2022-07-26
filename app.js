@@ -1,75 +1,61 @@
-const setOfWords = [
-	"My name is gopal nipane and I am Developer.",
-	"Hope you are having fun this is a simple game.",
-	"Almost before we knew it, we had left the ground.",
-];
+const RANDOM_QUOTE_API_URL = "http://api.quotable.io/random";
+const quoteDisplayElement = document.getElementById("quoteDisplay");
+const quoteInputElement = document.getElementById("quoteInput");
+const timerElement = document.getElementById("timer");
 
-const msg = document.getElementById("msg");
-const typeWords = document.getElementById("mywords");
-const btn = document.getElementById("btn");
-let startTime, endTime;
+quoteInputElement.addEventListener("input", () => {
+	const arrayQuote = quoteDisplayElement.querySelectorAll("span");
+	const arrayValue = quoteInputElement.value.split("");
 
-const playGame = () => {
-	let randomNumber = Math.floor(Math.random() * setOfWords.length);
-	msg.innerText = setOfWords[randomNumber];
-	let date = new Date();
-	startTime = date.getTime();
-	btn.innerText = "Done";
-};
-
-const endPlay = () => {
-	let date = new Date();
-	endTime = date.getTime();
-	let totalTime = (endTime - startTime) / 1000;
-	console.log(totalTime);
-
-	let totalStr = typeWords.value;
-	let wordCount = wordCounter(totalStr);
-
-	let speed = Math.floor((wordCount / totalTime) * 60);
-
-	let finalMsg = " You typed total at " + speed + " words per minutes. ";
-
-	finalMsg += compareWords(msg.innerText, totalStr);
-
-	msg.innerText = finalMsg;
-};
-
-const compareWords = (str1, str2) => {
-	let words1 = str1.split(" ");
-	let words2 = str2.split(" ");
-	let cnt = 0;
-
-	words1.forEach(function (item, index) {
-		if (item == words2[index]) {
-			cnt++;
+	let correct = true;
+	arrayQuote.forEach((characterSpan, index) => {
+		const character = arrayValue[index];
+		if (character == null) {
+			characterSpan.classList.remove("correct");
+			characterSpan.classList.remove("incorrect");
+			correct = false;
+		} else if (character === characterSpan.innerText) {
+			characterSpan.classList.add("correct");
+			characterSpan.classList.remove("incorrect");
+		} else {
+			characterSpan.classList.remove("correct");
+			characterSpan.classList.add("incorrect");
+			correct = false;
 		}
 	});
 
-	let errorWords = words1.length - cnt;
-	return (
-		cnt +
-		" correct out of " +
-		words1.length +
-		" words and the total number of error are " +
-		errorWords +
-		"."
-	);
-};
-
-const wordCounter = (str) => {
-	let response = str.split(" ").length;
-	console.log(response);
-	return response;
-};
-
-btn.addEventListener("click", function () {
-	if (this.innerText == "Start") {
-		typeWords.disabled = false;
-		playGame();
-		typeWords.value = "";
-	} else if (this.innerText == "Done") {
-		btn.innerText = "Start";
-		endPlay();
-	}
+	if (correct) renderNewQuote();
 });
+
+function getRandomQuote() {
+	return fetch(RANDOM_QUOTE_API_URL)
+		.then((response) => response.json())
+		.then((data) => data.content);
+}
+
+async function renderNewQuote() {
+	const quote = await getRandomQuote();
+	quoteDisplayElement.innerHTML = "";
+	quote.split("").forEach((character) => {
+		const characterSpan = document.createElement("span");
+		characterSpan.innerText = character;
+		quoteDisplayElement.appendChild(characterSpan);
+	});
+	quoteInputElement.value = null;
+	startTimer();
+}
+
+let startTime;
+function startTimer() {
+	timerElement.innerText = 0;
+	startTime = new Date();
+	setInterval(() => {
+		timer.innerText = getTimerTime();
+	}, 1000);
+}
+
+function getTimerTime() {
+	return Math.floor((new Date() - startTime) / 1000);
+}
+
+renderNewQuote();
