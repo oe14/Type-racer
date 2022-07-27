@@ -4,8 +4,8 @@ This is a type racing game to practice touch typing.
 <br> 
 
 ## preview
+<img src="https://user-images.githubusercontent.com/93136950/181100974-fc327d12-646f-41bc-9d03-912931c344d8.png" align="center">
 
-![image](https://user-images.githubusercontent.com/93136950/181100974-fc327d12-646f-41bc-9d03-912931c344d8.png)
 
 ### TO-DO list
 - restart game button 
