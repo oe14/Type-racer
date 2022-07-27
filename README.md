@@ -1,14 +1,11 @@
-This is a type racing game to practice touch typing. 
-
-   
+<p align="center">This is a type racing game to practice touch typing. <p>
 <br>
 # [Play here](https://typeracer16.herokuapp.com)
 <br> 
-## preview
-<p align="center">
 
-<img src="https://user-images.githubusercontent.com/93136950/181100974-fc327d12-646f-41bc-9d03-912931c344d8.png" align="center">
-<p>
+## preview
+
+![image](https://user-images.githubusercontent.com/93136950/181100974-fc327d12-646f-41bc-9d03-912931c344d8.png)
 
 ### TO-DO list
 - restart game button 
