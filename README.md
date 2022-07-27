@@ -1,4 +1,5 @@
-This is a type racing game to practice touch typing. 
+<p align="center">
+   This is a type racing game to practice touch typing. 
 <br>
 # [Play here](https://typeracer16.herokuapp.com)
 <br> 
@@ -13,5 +14,5 @@ This is a type racing game to practice touch typing.
 - Add option for keyboard typing sounds 
 - option for music toggle on/off 
 - add defficulty set 
-
+<p>
 
