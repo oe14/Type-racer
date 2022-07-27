@@ -2,7 +2,7 @@
    This is a type racing game to practice touch typing. 
 
    
-      <br>
+   <br>
 # [Play here](https://typeracer16.herokuapp.com)
 <br> 
 ## preview
