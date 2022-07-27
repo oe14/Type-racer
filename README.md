@@ -3,7 +3,6 @@
   
 # [Play here](https://typeracer16.herokuapp.com)
 
-<br> 
 
 ## preview
 
