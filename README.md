@@ -10,7 +10,7 @@
 
 ### TO-DO list
 - [ ] restart game button 
-- [x] display score
+--display score--
 - [ ] Add option for keyboard typing sounds 
 - [ ] option for music toggle on/off 
 - [ ] add defficulty set 
