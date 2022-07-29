@@ -1,7 +1,7 @@
 ### This is a type racing game to practice touch typing, inspired by [monkeytype](https://monkeytype.com)
 
   
-# >> [Play here](https://typeracer16.herokuapp.com) <<
+# >> [Play here](https://oeuf16.github.io/Type-racer/) <<
 
 
 ## preview
