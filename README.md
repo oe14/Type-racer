@@ -6,7 +6,7 @@
 
 ## preview
 
-![image](https://user-images.githubusercontent.com/93136950/181100974-fc327d12-646f-41bc-9d03-912931c344d8.png)
+![image](https://user-images.githubusercontent.com/93136950/181827230-db112453-5b2c-4c23-acbf-7aa404b47c54.png)
 
 ### TO-DO list
 - restart game button 
