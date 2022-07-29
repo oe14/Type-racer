@@ -1,12 +1,12 @@
+@import url("http://fonts.cdnfonts.com/css/modern-typewriter");
 
-                            @import url('http://fonts.cdnfonts.com/css/modern-typewriter');
-
-                
 * {
 	box-sizing: border-box;
 }
-
 body {
+	margin: 0;
+}
+.things {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -29,6 +29,7 @@ body,
 }
 
 .timer {
+	margin-top: 50px;
 	position: absolute;
 	top: 2rem;
 	font-size: 3rem;
@@ -77,4 +78,14 @@ body,
 	padding: 10px;
 	margin-top: 30px;
 	border-radius: 10%;
+}
+.contain {
+	display: flex;
+
+	flex-direction: row;
+	justify-content: center;
+	background-color: #1e0555;
+}
+#scrh1 {
+	color: rgb(236, 215, 215);
 }
