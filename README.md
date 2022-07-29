@@ -1,7 +1,7 @@
 ### This is a type racing game to practice touch typing, inspired by [monkeytype](https://monkeytype.com)
 
   <h1 style="text-align: center;">
- >> [Play here](https://oeuf16.github.io/Type-racer/) <<
+[Play here](https://oeuf16.github.io/Type-racer/)
 </h1>
 
 ## preview
