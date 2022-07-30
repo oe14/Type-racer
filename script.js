@@ -29,6 +29,32 @@ quoteInputElement.addEventListener("input", () => {
 		renderNewQuote();
 	}
 });
+let reset = false;
+function resetclicked() {
+	reset = true;
+	return reset;
+}
+function timelimitfunc() {
+	let timelimit = prompt("how long are you going to type for? (in seconds)");
+
+	timerElement.innerText = 0;
+	startTime = new Date();
+	var loop = setInterval(() => {
+		i++;
+		timer.innerText = getTimerTime();
+
+		if (i >= timelimit) {
+			clearInterval(loop);
+			alert("time's up!");
+			timerElement.innerText = 0;
+		}
+		if (reset == true) {
+			clearInterval(loop);
+
+			timerElement.innerText = 0;
+		}
+	}, 1000);
+}
 
 function getRandomQuote() {
 	return fetch(RANDOM_QUOTE_API_URL)
@@ -46,17 +72,9 @@ async function renderNewQuote() {
 		quoteDisplayElement.appendChild(characterSpan);
 	});
 	quoteInputElement.value = null;
-	startTimer();
 }
-
+let i = 0;
 let startTime;
-function startTimer() {
-	timerElement.innerText = 0;
-	startTime = new Date();
-	setInterval(() => {
-		timer.innerText = getTimerTime();
-	}, 1000);
-}
 
 function getTimerTime() {
 	return Math.floor((new Date() - startTime) / 1000);
