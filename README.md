@@ -1,18 +1,16 @@
 ### This is a type racing game to practice touch typing, inspired by [monkeytype](https://monkeytype.com)
 
-  
-# >> [Play here](https://typeracer16.herokuapp.com) <<
-
+# >> [Play here](https://oeuf16.github.io/Type-racer/) << 
 
 ## preview
 
-![image](https://user-images.githubusercontent.com/93136950/181100974-fc327d12-646f-41bc-9d03-912931c344d8.png)
+![image](https://user-images.githubusercontent.com/93136950/181827230-db112453-5b2c-4c23-acbf-7aa404b47c54.png)
 
 ### TO-DO list
-- restart game button 
-- display score
-- Add option for keyboard typing sounds 
-- option for music toggle on/off 
-- add defficulty set 
+- [x] display score
+- [ ] restart game button <---
+- [ ] Add option for keyboard typing sounds 
+- [ ] option for music toggle on/off 
+- [ ] add defficulty set 
 
 
