@@ -8,6 +8,7 @@
 ### TO-DO list
 - [x] display score
 - [x] restart game button 
+- [x] time selectors
 - [ ] Add option for keyboard typing sounds <---
 - [ ] option for music toggle on/off 
 - [ ] add defficulty set
