@@ -62,7 +62,7 @@ body,
 }
 
 .quote-input:focus {
-	border-color: black;
+	border-color: green;
 }
 
 .correct {

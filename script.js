@@ -3,6 +3,7 @@ const quoteDisplayElement = document.getElementById("quoteDisplay");
 const quoteInputElement = document.getElementById("quoteInput");
 const timerElement = document.getElementById("timer");
 const scoreElement = document.getElementById("scrh1");
+
 let score = 0;
 quoteInputElement.addEventListener("input", () => {
 	const arrayQuote = quoteDisplayElement.querySelectorAll("span");
@@ -37,7 +38,7 @@ function resetclicked() {
 }
 function timelimitfunc() {
 	let timelimit = prompt("how long are you going to type for? (in seconds)");
-
+	document.getElementById("quoteInput").focus();
 	timerElement.innerText = 0;
 	startTime = new Date();
 	var loop = setInterval(() => {
