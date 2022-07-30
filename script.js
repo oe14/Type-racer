@@ -3,7 +3,7 @@ const quoteDisplayElement = document.getElementById("quoteDisplay");
 const quoteInputElement = document.getElementById("quoteInput");
 const timerElement = document.getElementById("timer");
 const scoreElement = document.getElementById("scrh1");
-
+let s = "0";
 let score = 0;
 quoteInputElement.addEventListener("input", () => {
 	const arrayQuote = quoteDisplayElement.querySelectorAll("span");
@@ -27,7 +27,7 @@ quoteInputElement.addEventListener("input", () => {
 	});
 	if (correct) {
 		score += 1;
-		reset = true;
+		s = score.toString();
 		renderNewQuote();
 	}
 });
@@ -36,27 +36,7 @@ function resetclicked() {
 	reset = true;
 	return reset;
 }
-function timelimitfunc() {
-	let timelimit = prompt("how long are you going to type for? (in seconds)");
-	document.getElementById("quoteInput").focus();
-	timerElement.innerText = 0;
-	startTime = new Date();
-	var loop = setInterval(() => {
-		i++;
-		timer.innerText = getTimerTime();
-
-		if (i >= timelimit) {
-			clearInterval(loop);
-			alert("time's up!");
-			timerElement.innerText = 0;
-		}
-		if (reset == true) {
-			clearInterval(loop);
-
-			timerElement.innerText = 0;
-		}
-	}, 1000);
-}
+let maxn = 0;
 
 function getRandomQuote() {
 	return fetch(RANDOM_QUOTE_API_URL)
@@ -66,7 +46,7 @@ function getRandomQuote() {
 
 async function renderNewQuote() {
 	const quote = await getRandomQuote();
-	scoreElement.innerHTML = "score " + score;
+	scoreElement.innerHTML = "score " + s;
 	quoteDisplayElement.innerHTML = "";
 	quote.split("").forEach((character) => {
 		const characterSpan = document.createElement("span");
@@ -82,4 +62,69 @@ function getTimerTime() {
 	return Math.floor((new Date() - startTime) / 1000);
 }
 
+function max(n) {
+	if (n == 30) {
+		maxn = 30;
+		document.getElementById("quoteInput").focus();
+		timerElement.innerText = 0;
+		startTime = new Date();
+		var loop = setInterval(() => {
+			i++;
+			timer.innerText = maxn - getTimerTime();
+
+			if (i >= maxn) {
+				clearInterval(loop);
+				alert("time's up!");
+				timerElement.innerText = 0;
+			}
+			if (reset == true) {
+				clearInterval(loop);
+
+				timerElement.innerText = 0;
+			}
+		}, 1000);
+	}
+	if (n == 60) {
+		maxn = 60;
+		document.getElementById("quoteInput").focus();
+		timerElement.innerText = 0;
+		startTime = new Date();
+		var loop = setInterval(() => {
+			i++;
+			timer.innerText = maxn - getTimerTime();
+
+			if (i >= maxn) {
+				clearInterval(loop);
+				alert("time's up!");
+				timerElement.innerText = 0;
+			}
+			if (reset == true) {
+				clearInterval(loop);
+
+				timerElement.innerText = 0;
+			}
+		}, 1000);
+	}
+	if (n == 120) {
+		maxn = 120;
+		document.getElementById("quoteInput").focus();
+		timerElement.innerText = 0;
+		startTime = new Date();
+		var loop = setInterval(() => {
+			i++;
+			timer.innerText = maxn - getTimerTime();
+
+			if (i >= maxn) {
+				clearInterval(loop);
+				alert("time's up!");
+				timerElement.innerText = 0;
+			}
+			if (reset == true) {
+				clearInterval(loop);
+
+				timerElement.innerText = 0;
+			}
+		}, 1000);
+	}
+}
 renderNewQuote();

@@ -1,5 +1,3 @@
-@import url("http://fonts.cdnfonts.com/css/modern-typewriter");
-
 * {
 	box-sizing: border-box;
 }
@@ -15,9 +13,8 @@ body {
 	background-color: #1e0555;
 }
 
-body,
-.quote-input {
-	font-family: "MODERN TYPEWRITER", sans-serif;
+#quoteDisplay {
+	font-family: "Edu VIC WA NT Beginner", cursive;
 }
 
 .container {
@@ -62,7 +59,18 @@ body,
 }
 
 .quote-input:focus {
-	border-color: green;
+	outline: none;
+	background-color: transparent;
+	border: 4px solid #1e0555;
+	outline: none !important
+	;
+	width: 100%;
+	height: 8rem;
+	margin: auto;
+	resize: none;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	border-radius: 0.5rem;
 }
 
 .correct {
@@ -108,4 +116,17 @@ body,
 }
 #scrh1 {
 	color: rgb(236, 215, 215);
+}
+.timebtn {
+	border-radius: 40px;
+	padding: 20px;
+	border: none;
+	background-color: grey;
+}
+
+.timebtn:hover {
+	background-color: rgba(84, 82, 82, 0.493);
+}
+.instruction {
+	font-family: ;
 }
