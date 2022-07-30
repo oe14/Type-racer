@@ -10,7 +10,7 @@
 - [ ] add defficulty setx
 ## preview
 
-![image](https://user-images.githubusercontent.com/93136950/181827230-db112453-5b2c-4c23-acbf-7aa404b47c54.png)
+![image](https://user-images.githubusercontent.com/93136950/181870547-03ee0dde-f4fd-41d1-aa8b-a3d2e1bd6310.png)
 
 
 
