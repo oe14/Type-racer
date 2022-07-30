@@ -13,7 +13,7 @@
 - [ ] add defficulty set
 ## preview
 
-![image](https://user-images.githubusercontent.com/93136950/181870547-03ee0dde-f4fd-41d1-aa8b-a3d2e1bd6310.png)
+![image](https://user-images.githubusercontent.com/93136950/181934535-52c9c976-4277-4a9a-babe-1a117ad627aa.png)
 
 
 
