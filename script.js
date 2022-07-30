@@ -24,8 +24,10 @@ quoteInputElement.addEventListener("input", () => {
 			correct = false;
 		}
 	});
-
-	if (correct) renderNewQuote();
+	if (correct) {
+		score += 1;
+		renderNewQuote();
+	}
 });
 
 function getRandomQuote() {
@@ -35,7 +37,6 @@ function getRandomQuote() {
 }
 
 async function renderNewQuote() {
-	score = score + 1;
 	const quote = await getRandomQuote();
 	scoreElement.innerHTML = "score " + score;
 	quoteDisplayElement.innerHTML = "";
