@@ -26,6 +26,7 @@ quoteInputElement.addEventListener("input", () => {
 	});
 	if (correct) {
 		score += 1;
+		reset = true;
 		renderNewQuote();
 	}
 });
