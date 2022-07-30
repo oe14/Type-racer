@@ -1,7 +1,9 @@
 ### This is a type racing game to practice touch typing, inspired by [monkeytype](https://monkeytype.com)
 
 # >> [Play here](https://oeuf16.github.io/Type-racer/) << 
-<span style="color: red;"> note this is still a work in progress </span>
+```diff
+- note: this is still a work in progress so expect some logic errors while testing.
+```
 
 ### TO-DO list
 - [x] display score
