@@ -2,7 +2,7 @@
 
 # >> [Play here](https://oeuf16.github.io/Type-racer/) << 
 ```diff
-**note** : this is still a work in progress so expect some logic errors while testing.
+note : this is still a work in progress so expect some logic errors while testing.
 ```
 
 ### TO-DO list
