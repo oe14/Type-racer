@@ -5,6 +5,7 @@ const timerElement = document.getElementById("timer");
 const scoreElement = document.getElementById("scrh1");
 let s = "0";
 let score = 0;
+
 quoteInputElement.addEventListener("input", () => {
 	const arrayQuote = quoteDisplayElement.querySelectorAll("span");
 	const arrayValue = quoteInputElement.value.split("");
