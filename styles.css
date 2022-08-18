@@ -123,8 +123,14 @@ body {
 	font-size: 30px;
 }
 #scrh1 {
-	color: rgb(236, 215, 215);
-	font-family: "Poppins", sans-serif;
+	/* color: rgb(236, 215, 215);
+	margin-left: 60px;
+	font-family: "Poppins", sans-serif; */
+	text-align: center;
+	font-size: 50px;
+	color: #95a7e7;
+	font-weight: bold;
+	align-self: center;
 }
 .timebtn {
 	padding: 15px;
@@ -158,4 +164,9 @@ body {
 	width: 50%;
 	align-self: center;
 	margin-right: 50px;
+}
+.timeandscore {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
