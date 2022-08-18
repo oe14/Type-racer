@@ -14,7 +14,8 @@ body {
 }
 
 #quoteDisplay {
-	font-family: "Edu VIC WA NT Beginner", cursive;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
 }
 
 .container {
@@ -117,12 +118,15 @@ body {
 }
 #scrh1 {
 	color: rgb(236, 215, 215);
+	font-family: "Poppins", sans-serif;
 }
 .timebtn {
-	border-radius: 40px;
-	padding: 20px;
+	padding: 15px;
 	border: none;
-	background-color: grey;
+	background-color: rgb(207, 222, 137);
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	size: 20px;
 }
 
 .timebtn:hover {
@@ -131,12 +135,12 @@ body {
 .instruction {
 	font-size: 20px;
 	font-weight: bold;
-	font-family: "Secular One", sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: rgb(207, 222, 137);
 }
 .choosetime {
 	border-color: black;
-	border-style: dashed;
+
 	border-radius: 10px;
 	box-sizing: border-box;
 	margin: 10px;
