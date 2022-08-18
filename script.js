@@ -5,11 +5,7 @@ const timerElement = document.getElementById("timer");
 const scoreElement = document.getElementById("scrh1");
 let s = "0";
 let score = 0;
-document.addEventListener("keydown", function (e) {
-	if (e.keyCode == 65) {
-		document.getElementById("audio").play();
-	}
-});
+
 quoteInputElement.addEventListener("input", () => {
 	const arrayQuote = quoteDisplayElement.querySelectorAll("span");
 	const arrayValue = quoteInputElement.value.split("");
@@ -86,9 +82,10 @@ function max(n) {
 				timerElement.innerText = 0;
 			}
 			if (reset == true) {
-				clearInterval(loop);
+				// clearInterval(loop);
 
-				timerElement.innerText = 0;
+				// timerElement.innerText = 0;
+				location.reload();
 			}
 		}, 1000);
 	}

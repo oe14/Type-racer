@@ -26,16 +26,22 @@ body {
 	width: 700px;
 	max-width: 90%;
 }
-.time {
+/* .time {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-}
+} */
 .timer {
-	position: absolute;
-	top: 2rem;
-	font-size: 3rem;
+	text-align: center;
+	font-size: 50px;
+	color: #f0db4f;
+	font-weight: bold;
+	align-self: center;
+}
+.timetext {
+	margin-top: 20px;
+	font-size: 20px;
 	color: #f0db4f;
 	font-weight: bold;
 	align-self: center;
