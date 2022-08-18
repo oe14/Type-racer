@@ -37,7 +37,10 @@ function resetclicked() {
 	return reset;
 }
 let maxn = 0;
-
+function quoteenable() {
+	document.getElementById("quoteInput").disabled = false;
+	document.getElementById("quoteInput").focus();
+}
 function getRandomQuote() {
 	return fetch(RANDOM_QUOTE_API_URL)
 		.then((response) => response.json())

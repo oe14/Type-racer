@@ -10,6 +10,9 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
    <script src="script.js" defer></script>
    <title>speed typing</title>
 </head>
@@ -21,35 +24,28 @@
 
    </section>
 
-
-
-
-
-
-
-
    <div class="things">
 
       <div class="horizontal">
 
          <div class="container">
             <div class="quote-display" id="quoteDisplay">quote</div>
-            <textarea id="quoteInput" class="quote-input">quote</textarea>
+            <textarea id="quoteInput" class="quote-input" disabled>quote</textarea>
 
 
          </div>
-         <p class="instruction"> choose time </p>
-         <div class="times">
-            <button class="timebtn" onclick="max(60);">60</button>
-            <button class="timebtn" onclick="max(30);">30</button>
-            <button class="timebtn" onclick="max(120);">120</button>
-         </div>
+
+         <section class="choosetime">
+            <p class="instruction"> choose time to start typing</p>
+            <div class="times">
+               <button class="timebtn" onclick="max(60);quoteenable();" id="btn60">60</button>
+               <button class="timebtn" onclick="max(30);quoteenable();" id="btn30">30</button>
+               <button class="timebtn" onclick="max(120);quoteenable();" id="btn120">120</button>
+            </div>
+         </section>
          <div><button class="btn" onclick="resetclicked();">Reset</button>
             <!-- <button class="btn" onclick="timelimitfunc();">Start</button> -->
          </div>
-
-
-
 
          <h1 class=" scr" id="scrh1">0</h1>
 

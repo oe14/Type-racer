@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-	margin-top: 50px;	
+	margin-top: 50px;
 	background-color: #f0db4f;
 	padding: 1rem;
 	border-radius: 0.5rem;
@@ -129,5 +129,23 @@ body {
 	background-color: rgba(84, 82, 82, 0.493);
 }
 .instruction {
-	font-family: ;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Secular One", sans-serif;
+	color: rgb(207, 222, 137);
+}
+.choosetime {
+	border-color: black;
+	border-style: dashed;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin: 10px;
+}
+.times {
+	padding-bottom: 20px;
+}
+.choosetime {
+	width: 50%;
+	align-self: center;
+	margin-right: 50px;
 }
